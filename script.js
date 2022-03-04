@@ -8,10 +8,10 @@ console.log('Percorso in km' + streetUser);
 console.log('Età' + ageUser);
 
 
-if (!isNaN(streetUser || ageUser)) {
-    alert("Hai digitato un numero");
+if (isNaN(streetUser) || isNaN(ageUser)) {
+    alert("Hai digitato dei caratteri");
 } else {
-    alert("Hai digitato un carattere");
+    alert("Hai digitato dei numeri");
 }
 
 // 0,21€ al km
