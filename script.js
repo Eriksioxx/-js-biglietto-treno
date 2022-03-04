@@ -22,14 +22,20 @@ if (ageUser < 18) {
     discountYoung = discountYoung.toFixed(2);
     console.log('Totale con sconto giovani' + discountYoung + '€');
 
+    document.getElementById('price').innerText = 'Il prezzo totale è:' + discountYoung + '€';
+
 } else if (ageUser > 65) {
     let discountOld = (priceTicket * 0.6);
     discountOld = discountOld.toFixed(2);
     console.log('Totale con sconto anziani' + discountOld + '€');
 
+    document.getElementById('price').innerText = 'Il prezzo totale è:' + discountOld + '€';
+
 } else {
     priceTicket = priceTicket.toFixed(2);
     console.log('Prezzo finale ' + priceTicket + '€');
 
+    document.getElementById('price').innerText = 'Il prezzo totale è:' + priceTicket + '€';
 }
+
 
