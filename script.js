@@ -7,6 +7,13 @@ const ageUser = parseInt(prompt('Inserisci età'));
 console.log('Percorso in km' + streetUser);
 console.log('Età' + ageUser);
 
+
+if (!isNaN(streetUser || ageUser)) {
+    alert("Hai digitato un numero");
+} else {
+    alert("Hai digitato un carattere");
+}
+
 // 0,21€ al km
 const priceKm = 0.21;
 console.log(priceKm + "€ Costo km percorrenza");
